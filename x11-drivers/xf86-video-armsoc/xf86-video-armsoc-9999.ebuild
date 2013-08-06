@@ -23,5 +23,6 @@ DEPEND="${RDEPEND}"
 
 src_prepare() {
 	epatch "${FILESDIR}"/0001-Import-patch-from-Marcin.patch
+	epatch "${FILESDIR}"/remove-mibstore-header-include.patch
 	xorg-2_src_prepare
 }
